@@ -103,7 +103,7 @@ Parameters inside ImageConfig are changable at runtime.
 Adjust file permission for image-content folder:
     sudo chown arashuser:www-data image-content
 
-Since php version is set 5 I avoided using __callStatic.
+Since php version is set to 5 I avoided using __callStatic.
 
 Even though all images in test file are exported together, each image can be exported separately too with its custom file path
 
