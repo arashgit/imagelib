@@ -25,7 +25,42 @@ all images are located inside image-content folder
 how to run codes
 =====
 
-    require_once 'image-lib/index.php'; 
+include library and define collection
+
+    require_once 'image-lib/index.php';
+    // define collection
+    $imagecollection = new ImageCollection();
+
+
+load an image file, add it into the collection and define some effects
+
+    // image 1
+    // file: a.png
+    // effects: resize 150x500, blur 10px, grayscale
+    $image1=new ImageItem('a.png');
+    $imagecollection->addimage($image1);		// add image to collection
+    $effect_resize150=new EffectItem('EffectCore::resize',array('width'=>150,'height'=>500));
+    $effect_blur10=new EffectItem('EffectCore::blur',array('radius'=>10));
+    $effect_grayscale1=new EffectItem('EffectCore::grayscale',array());
+
+
+attach effects to image:
+
+    $image1->add_effect($effect_resize150); 	// attach effect 1
+    $image1->add_effect($effect_blur10);		// attach effect 2
+    $image1->add_effect($effect_grayscale1);	// attach effect 3
+
+define othe images and effects
+
+    ...
+
+run effects and generate output files:
+
+    $imagecollection->implement_all_effects();// effects can run on each seperate image too
+    $imagecollection->export_all();// each image can be exported separately too
+
+
+outputs would be generated in image-content file.
 
 considerations
 =====
