@@ -109,6 +109,10 @@ Inside your main php file call the effect this way:
     ....
 ```
 
+![ScreenShot](https://cloud.githubusercontent.com/assets/8072718/3485752/a1879e9c-03fd-11e4-8921-576a56ee95b5.png)
+![ScreenShot](https://cloud.githubusercontent.com/assets/8072718/3485755/a192a30a-03fd-11e4-8b92-698ab1a51e41.png)
+
+
 Considerations
 =====
 
