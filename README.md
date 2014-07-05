@@ -71,11 +71,11 @@ https://github.com/arashgit/imagelib/issues/1
 
 Output result:
 
-    ### implementing effects on /home/aran/arash/www/imagelib/image-content/a.png
+    ### implementing effects on /home/arash/www/imagelib/image-content/a.png
     resize 150x500 is called
     blur is called with radius 10px but not implemented yet
     grayscale is called
-    ### implementing effects on /home/aran/arash/www/imagelib/image-content/b.jpeg
+    ### implementing effects on /home/arash/www/imagelib/image-content/b.jpeg
     resize 200x200 is called
     CustomEffect1::invert is called.
     CustomEffect2::effect1 is called but not implemented yet.
@@ -85,7 +85,7 @@ Screenshots
 =====
 
 ```
-### implementing effects on /home/aran/arash/www/imagelib/image-content/a.png
+### implementing effects on /home/arash/www/imagelib/image-content/a.png
 resize 150x500 is called
 blur is called with radius 10px but not implemented yet
 grayscale is called
@@ -95,7 +95,7 @@ grayscale is called
 ![ScreenShot](https://cloud.githubusercontent.com/assets/8072718/3485755/a192a30a-03fd-11e4-8b92-698ab1a51e41.png)
 
 ```
-### implementing effects on /home/aran/arash/www/imagelib/image-content/b.jpeg
+### implementing effects on /home/arash/www/imagelib/image-content/b.jpeg
 resize 200x200 is called
 CustomEffect1::invert is called.
 CustomEffect2::effect1 is called but not implemented yet.
