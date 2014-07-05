@@ -25,7 +25,7 @@ all images are located inside image-content folder
 how to run codes
 =====
 
-
+    require_once 'image-lib/index.php'; 
 
 considerations
 =====
