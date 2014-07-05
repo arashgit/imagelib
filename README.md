@@ -63,7 +63,17 @@ Outputs would be generated in image-content folder.
 
 Four sample images are added into the issue:
 https://github.com/arashgit/imagelib/issues/1
+Output result:
 
+    ### implementing effects on /home/aran/arash/www/imagelib/image-content/a.png
+    resize 150x500 is called
+    blur is called with radius 10px but not implemented yet
+    grayscale is called
+    ### implementing effects on /home/aran/arash/www/imagelib/image-content/b.jpeg
+    resize 200x200 is called
+    CustomEffect1::invert is called.
+    CustomEffect2::effect1 is called but not implemented yet.
+    CustomEffect2::effect2 is called but not implemented yet.
 
 User Custom Effects
 =====
