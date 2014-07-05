@@ -138,4 +138,4 @@ Even though all images in test file are exported together, each image can be exp
 
 This library keeps the image primary extension and does not change it while exporting files.
 
-With a very slight change this library is able to hold effects before importing any image at the cost of proning it to faults however I left it as it is.
+With a very slight change this library is able to hold effects before importing any image at the cost of proning it to faults. So I left it as it is.
