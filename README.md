@@ -9,13 +9,13 @@ This library is basically written in Linux environments. However to make it comp
 
 include hierarchy:
 test.php
-	->image-lib/index.php
-		-> config.php
-		-> image_collection.php 
-			-> image_item.php 
-				-> effect_item.php 
-					-> effect_manager.php
-						-> * cusom effecs.php
+ - 	->image-lib/index.php
+ - 		-> config.php
+ - 		-> image_collection.php 
+ - 			-> image_item.php 
+ - 				-> effect_item.php 
+ - 					-> effect_manager.php
+ - 						-> * cusom effecs.php
 
 all user custom effects go to folder 'image-usereffects'.
 with a custom php file with a custom class name. 
