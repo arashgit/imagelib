@@ -63,6 +63,7 @@ Outputs would be generated in image-content folder.
 
 Four sample images are added into the issue:
 https://github.com/arashgit/imagelib/issues/1
+
 Output result:
 
     ### implementing effects on /home/aran/arash/www/imagelib/image-content/a.png
