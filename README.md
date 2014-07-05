@@ -21,7 +21,7 @@ All user custom effects go to folder 'image-usereffects'.
 
 All images are located inside image-content folder. The result would be generated in the same folder.
 
-how to run codes
+How to run codes
 =====
 
 Include library and define collection
@@ -86,7 +86,7 @@ Inside your main php file call the effect this way:
     ....
 
 
-considerations
+Considerations
 =====
 
 
