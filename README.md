@@ -61,6 +61,10 @@ Run effects and generate output files:
 
 Outputs would be generated in image-content folder.
 
+Four sample images are added into the issue:
+https://github.com/arashgit/imagelib/issues/1
+
+
 User Custom Effects
 =====
 Inside folder 'image-usereffects' create a custom file with .php extension. This file would be included automatically. Add a custom class. Inside the class you should add static functions as effect:
