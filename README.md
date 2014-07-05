@@ -90,7 +90,7 @@ Inside folder 'image-usereffects' create a custom file with .php extension. This
     {
     // user custom effect
     // effect:
-    // 		invert
+    // 		myeffect name
     // prameters
     // 		parameter1, parameter2, parameter3
     public static function myeffect($source_image,$parameters)
@@ -114,19 +114,25 @@ Considerations
 
 
 It is supposed that PHP-GD library is installed as it is the standard php library for resizing image:
-    sudo apt-get install php5-gd
+```
+sudo apt-get install php5-gd
+```
 
 The primary environment is set to 'developement'. To avoid showing errors and messages it should be change to 'production' inside config.php.
 
 To run this library images are need to be loaded. hence, upload_max_filesize inside php.ini is needed to be adjusted correctly.
-    sudo gedit /etc/php5/apache2/php.ini
+```
+sudo gedit /etc/php5/apache2/php.ini
+```
 
 Parameters inside ImageConfig are changable at runtime.
 
 Adjust file permission for image-content folder:
-    sudo chown arashuser:www-data image-content
+```
+sudo chown arashuser:www-data image-content
+```
 
-Since php version is set to 5 I avoided using __callStatic.
+Since php version is set to 5 I avoided using ```__callStatic```.
 
 Even though all images in test file are exported together, each image can be exported separately too with its custom file path
 
