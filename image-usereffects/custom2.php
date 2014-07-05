@@ -10,7 +10,8 @@ class CustomEffect2
 	// effect:
 	// 		effect1
 	// prameters
-	// 		(none)
+	// 		custom param 1
+	// 		custom param 2
 	public static function effect1($source_image,$parameters)
 	{
 		if(IMAGEAPI_ENVIRONMENT=='development')
@@ -25,7 +26,11 @@ class CustomEffect2
 	// effect:
 	// 		effect2
 	// prameters
-	// 		(none)
+	// 		custom param 1
+	// 		custom param 2
+	//		...
+	// 		custom param n
+
 	public static function effect2($source_image,$parameters)
 	{
 		if(IMAGEAPI_ENVIRONMENT=='development')
