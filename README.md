@@ -81,6 +81,30 @@ Output result:
     CustomEffect2::effect1 is called but not implemented yet.
     CustomEffect2::effect2 is called but not implemented yet.
 
+Screenshots
+=====
+
+```
+### implementing effects on /home/aran/arash/www/imagelib/image-content/a.png
+resize 150x500 is called
+blur is called with radius 10px but not implemented yet
+grayscale is called
+```
+
+![ScreenShot](https://cloud.githubusercontent.com/assets/8072718/3485752/a1879e9c-03fd-11e4-8921-576a56ee95b5.png)
+![ScreenShot](https://cloud.githubusercontent.com/assets/8072718/3485755/a192a30a-03fd-11e4-8b92-698ab1a51e41.png)
+
+```
+### implementing effects on /home/aran/arash/www/imagelib/image-content/b.jpeg
+resize 200x200 is called
+CustomEffect1::invert is called.
+CustomEffect2::effect1 is called but not implemented yet.
+CustomEffect2::effect2 is called but not implemented yet.
+```
+![ScreenShot](https://cloud.githubusercontent.com/assets/8072718/3485754/a1908368-03fd-11e4-9d85-49867acca148.jpeg)
+![ScreenShot](https://cloud.githubusercontent.com/assets/8072718/3485753/a18f2770-03fd-11e4-852c-8dc8548c075b.jpeg)
+
+
 User Custom Effects
 =====
 Inside folder 'image-usereffects' create a custom file with .php extension. This file would be included automatically. Add a custom class. Inside the class you should add static functions as effect:
@@ -108,10 +132,6 @@ Inside your main php file call the effect this way:
     $image2->add_effect($effect_custom1); 	// attach effect
     ....
 ```
-
-![ScreenShot](https://cloud.githubusercontent.com/assets/8072718/3485752/a1879e9c-03fd-11e4-8921-576a56ee95b5.png)
-![ScreenShot](https://cloud.githubusercontent.com/assets/8072718/3485755/a192a30a-03fd-11e4-8b92-698ab1a51e41.png)
-
 
 Considerations
 =====
