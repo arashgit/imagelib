@@ -14,7 +14,7 @@ Include hierarchy:
  - 	->-> image_collection.php 
  - 	->->-> image_item.php 
  - 	->->->-> effect_item.php 
- - 	->->->->-> effect_manager.php
+ - 	->->->->-> effect_core.php
  -  ->->->->->-> * cusom effecs.php
 
 All user custom effects go to folder 'image-usereffects'.
@@ -80,6 +80,7 @@ User Custom Effects
 =====
 Inside folder 'image-usereffects' create a custom file with .php extension. This file would be included automatically. Add a custom class. Inside the class you should add static functions as effect:
 
+```php
     class CustomEffect1
     {
     // user custom effect
