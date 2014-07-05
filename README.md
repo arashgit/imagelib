@@ -26,13 +26,15 @@ How to run codes
 
 Include library and define collection
 
+```php
     require_once 'image-lib/index.php';
     // define collection
     $imagecollection = new ImageCollection();
-
+```
 
 Load an image file, add it into the collection and define some effects
 
+```php
     // image 1
     // file: a.png
     // effects: resize 150x500, blur 10px, grayscale
@@ -41,23 +43,26 @@ Load an image file, add it into the collection and define some effects
     $effect_resize150=new EffectItem('EffectCore::resize',array('width'=>150,'height'=>500));
     $effect_blur10=new EffectItem('EffectCore::blur',array('radius'=>10));
     $effect_grayscale1=new EffectItem('EffectCore::grayscale',array());
-
+```
 
 Attach effects to image:
-
+```php
     $image1->add_effect($effect_resize150); 	// attach effect 1
     $image1->add_effect($effect_blur10);		// attach effect 2
     $image1->add_effect($effect_grayscale1);	// attach effect 3
+```
 
 Define othe images and effects
-
+```php
     ...
+```
 
 Run effects and generate output files:
 
+```php
     $imagecollection->implement_all_effects();// effects can run on each seperate image too
     $imagecollection->export_all();// each image can be exported separately too
-
+```
 
 Outputs would be generated in image-content folder.
 
@@ -94,13 +99,15 @@ Inside folder 'image-usereffects' create a custom file with .php extension. This
         return $final_image;
     }
     ......
+```
 
 Inside your main php file call the effect this way:
 
+```php
     $effect_custom1=new EffectItem('CustomEffect1::myeffect',array('parameter1'=>11, 'parameter2'=>15, 'parameter3'=>null));
     $image2->add_effect($effect_custom1); 	// attach effect
     ....
-
+```
 
 Considerations
 =====
