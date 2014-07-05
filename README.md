@@ -23,12 +23,12 @@ with a custom php file with a custom class name.
 all images are located inside image-content folder
 
 how to run codes
-========
+=====
 
 
 
 considerations
-========
+=====
 
 
 it is suppose PHP-GD library is installed as it is the standard php library for resizing image:
